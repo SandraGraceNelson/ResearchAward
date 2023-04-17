@@ -27,7 +27,7 @@ def run_app():
     # Set app title and subtitle
     st.title("DepScan")
     st.markdown("*Do you find it difficult to understand the emotions of your loved ones? Don't worry, DepScan can help! Just input their text and DepScan will analyze it to determine if it contains language commonly associated with depression.*")
-    st.markdown("*Time is of the essence when it comes to mental health, so don't hesitate to use DepScan.*"
+    st.markdown("*Time is of the essence when it comes to mental health, so don't hesitate to use DepScan.*")
 
     # Create text input and analyze button
     text = st.text_area("Enter your text:", height=150)
