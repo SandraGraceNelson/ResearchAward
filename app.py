@@ -20,9 +20,6 @@ def run_app():
         background-color: #ff99cc;
         background-image: linear-gradient(315deg, #ff99cc 0%, #ffe8e8 74%);
     }
-    h1, h2, h3 {
-        color: #FFFFFF;
-    }
     </style>
     '''
     st.markdown(page_bg, unsafe_allow_html=True)
@@ -35,7 +32,7 @@ def run_app():
     text = st.text_area("Enter your text:", height=150)
     if st.button("Analyze"):
         result = analyze_text(text)
-        st.write(result, unsafe_allow_html=True)
+        st.write(result)
 
 if __name__ == "__main__":
     run_app()
