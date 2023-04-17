@@ -1,5 +1,5 @@
 import streamlit as st
-import textblob
+from textblob import TextBlob
 def analyze_text(text):
     blob = TextBlob(text)
     sentiment_polarity = blob.sentiment.polarity
