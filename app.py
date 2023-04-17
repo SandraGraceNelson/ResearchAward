@@ -14,16 +14,16 @@ def run_app():
     st.set_page_config(page_title="Depression Analysis App", page_icon=":smiley:", layout="wide")
     
     # Set background image
-    page_bg = '''
+    page_bg_img = '''
     <style>
     body {
-        background-image: url("https://i.imgur.com/dyxRJ6g.png") !important;
-        background-size: cover;
-        background-position: center;
+    background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
+    background-size: cover;
     }
     </style>
     '''
-    st.markdown(page_bg, unsafe_allow_html=True)
+
+    st.markdown(page_bg_img, unsafe_allow_html=True)
 
     # Set app title and subtitle
     st.title("Depression Analysis App")
