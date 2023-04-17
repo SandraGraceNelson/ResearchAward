@@ -22,7 +22,7 @@ def run_app():
     }
     </style>
     '''
-    st.markdown(page_bg, unsafe_allow_html=False)
+    st.markdown(page_bg, unsafe_allow_html=True)
 
     # Set app title and subtitle
     st.title("Depression Analysis App")
