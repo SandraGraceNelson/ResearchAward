@@ -1,10 +1,10 @@
 import streamlit as st
-from textblob import TextBlob
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 def analyze_text(text):
-    blob = TextBlob(text)
-    sentiment_polarity = blob.sentiment.polarity
-    if sentiment_polarity <= 0:
+    analyzer = SentimentIntensityAnalyzer()
+    sentiment_scores = analyzer.polarity_scores(text)
+    if sentiment_scores['neg'] > sentiment_scores['pos']:
         return "Hey, they need some help asap. Be the support."
     else:
         return "Don't worry, they are perfectly alright."
