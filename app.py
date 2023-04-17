@@ -30,7 +30,7 @@ def run_app():
     st.markdown("*Time is of the essence when it comes to mental health, so don't hesitate to use DepScan.*")
 
     # Create text input and analyze button
-    text = st.text_area("Enter your text:", height=150)
+    text = st.text_area("Enter text:", height=150)
     if st.button("Analyze"):
         result = analyze_text(text)
         st.write(result)
